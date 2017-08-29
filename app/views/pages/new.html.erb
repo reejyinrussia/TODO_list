@@ -1,0 +1,16 @@
+<h1>Create New Task</h1>
+
+<%= form_for @page do |f| %>
+
+  <div>
+  <%= f.label :title, placeholder: 'title', required: true  %>
+  <%= f.text_field :title %>
+  </div>
+
+  <div>
+  <%= f.label :task, placeholder: 'task', required: true  %>
+  <%= f.text_area :task %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
